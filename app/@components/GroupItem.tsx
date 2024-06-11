@@ -13,11 +13,9 @@ function GroupItem({ id, name, description, createdAt }: GroupItemProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [updatedName, setUpatedName] = useState(name);
   const [updatedDesc, setUpdatedDesc] = useState(description);
-  console.log(id);
   // handleUpdate
   const handleUpdate = (e: any) => {
     e.preventDefault();
-    console.log("updated");
     setIsEditing(false);
     editGroup(id, { name: updatedName, description: updatedDesc });
   };

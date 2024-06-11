@@ -3,8 +3,6 @@ import useStore from "@/@store";
 import GroupItem from "./GroupItem";
 function GroupList() {
   const { groups } = useStore();
-  console.log(groups);
-
   return (
     <div className="flex flex-wrap gap-3 w-full  mt-4">
       {groups.length < 0 ? (
