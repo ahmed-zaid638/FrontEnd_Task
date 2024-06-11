@@ -1,12 +1,15 @@
-import CreateForm from "@/app/@components/Form";
+import CreateForm from "@/app/components/Form";
 import React from "react";
-import Layout from "./@components/layout";
+import GroupList from "./components/GroupList";
 
 function page() {
   return (
-    <div>
-      <Layout />
+    <div className="p-4">
+    <div className="container mt-3">
+      <CreateForm />
+      <GroupList />
     </div>
+  </div>
   );
 }
 
