@@ -72,7 +72,7 @@ function GroupItem({ id, name, description, createdAt }: GroupItemProps) {
             </div>
           </div>
 
-          <div className="flex justify-between sm:absolute bottom-7 mt-5 gap-5 w-full sm:w-[90%]">
+          <div className="flex justify-between sm:absolute bottom-7 mt-5 gap-5 w-full sm:w-[95%]">
             <button
               className="border px-6 py-2 rounded-md"
               onClick={() => setIsEditing(true)}
